@@ -129,7 +129,7 @@ export default {
         { icon: 'undo', name: 'request_payment' },
         { icon: 'cloud_download', name: 'dump_as_key_file' },
         { divider: true, name: 'contract' },
-        { icon: 'copyright', name: 'create_token' },
+        //{ icon: 'copyright', name: 'create_token' },
         { icon: 'create', name: 'create_contract' },
         { icon: 'publish', name: 'send_to_contract' },
         { icon: 'play_circle_filled', name: 'call_contract' },
