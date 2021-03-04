@@ -51,7 +51,7 @@
               <create-contract v-if="isCurrent['create_contract']"></create-contract>
               <send-to-contract v-if="isCurrent['send_to_contract']"></send-to-contract>
               <call-contract v-if="isCurrent['call_contract']"></call-contract>
-              <!-- <delegation :view="isCurrent['delegation']" v-if="isCurrent['delegation']"></delegation> -->
+              <delegation :view="isCurrent['delegation']" v-if="isCurrent['delegation']"></delegation>
               <config v-if="isCurrent['settings']"></config>
             </v-flex>
           </v-layout>
@@ -116,11 +116,11 @@ export default {
         { icon: 'assignment', name: 'create_from_mnemonic' },
         { icon: 'sms', name: 'restore_from_mnemonic' },
         { icon: 'vpn_key', name: 'restore_from_wif' },
-        { icon: 'phonelink_lock', name: 'restore_from_mobile' },
+        //{ icon: 'phonelink_lock', name: 'restore_from_mobile' },
         { icon: 'cloud_upload', name: 'restore_from_key_file' },
-        { icon: 'flip_to_front', name: 'restore_from_ledger' },
+        //{ icon: 'flip_to_front', name: 'restore_from_ledger' },
         { divider: true, name: 'stake' },
-        { icon: 'gavel', name: 'delegation' },
+        //{ icon: 'gavel', name: 'delegation' },
         { divider: true, name: 'wallet' },
         { icon: 'account_balance_wallet', name: 'view' },
         { icon: 'list', name: 'transactions' },
