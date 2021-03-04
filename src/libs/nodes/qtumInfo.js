@@ -26,7 +26,8 @@ export default {
   },
 
   async getTokenInfo(contractAddress) {
-    return await _get(`/mrc20/${contractAddress}`)
+    //return await _get(`/mrc20/${contractAddress}`)
+    return await _get(`/mrc20`)
   },
 
   async getTxList(address, size = 10) {

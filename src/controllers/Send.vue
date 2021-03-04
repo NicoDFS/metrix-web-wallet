@@ -177,7 +177,7 @@
         addTokenDecimals: 8,
         gasPrice: '5000',
         gasLimit: '250000',
-        fee: '10',
+        fee: '2.25',
         confirmAddressDialog: false,
         repeatAddress: '',
         confirmSendDialog: false,

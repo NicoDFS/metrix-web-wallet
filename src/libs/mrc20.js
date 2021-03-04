@@ -36,7 +36,15 @@ export default {
 
   async fetchTokenInfo(contractAddress) {
     try {
-      return await server.currentNode().getTokenInfo(contractAddress)
+      let result = await server.currentNode().getTokenInfo()
+      let tokenlist = result.tokens;
+      for (let i = 0; tokenlist.length; i++) {
+        if(tokenlist[i].address === contractAddress) {
+          return tokenlist[i]
+        }
+      }
+      return null
+      //return await server.currentNode().getTokenInfo()
     } catch (e) {
       throw 'this contract is not a mrc20 token'
     }

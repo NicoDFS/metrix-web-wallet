@@ -2,6 +2,7 @@
   <v-card>
     <v-card-title>
       <span class="headline">{{ $t('view_tx.title') }}</span>
+      <v-btn v-on:click="onRefresh()" color="green">Refresh</v-btn>
     </v-card-title>
     <v-card-text>
       <p>{{ $t('view_tx.recent') }}</p>
@@ -112,5 +113,10 @@
         return this.wallet.txList
       },
     },
+    methods: {
+      onRefresh: function() {
+        this.wallet.setTxList()
+      }
+    }
   }
 </script>

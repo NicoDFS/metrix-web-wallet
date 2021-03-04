@@ -2,6 +2,7 @@
   <v-card>
     <v-card-title>
       <span class="headline">{{ $t('view.title') }}</span>
+      <v-btn v-on:click="onRefresh()" color="green">Refresh</v-btn>
     </v-card-title>
     <v-card-text>
       <v-layout v-for="(item, i) in infoLabel" :key="i">
@@ -99,6 +100,9 @@ export default {
     },
     onCopyError: function() {
       this.$root.error('copy fail')
+    },
+    onRefresh: function() {
+      this.wallet.setInfo()
     }
   }
 }
