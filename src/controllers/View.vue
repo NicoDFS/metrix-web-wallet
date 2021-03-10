@@ -2,7 +2,7 @@
   <v-card>
     <v-card-title>
       <span class="headline">{{ $t('view.title') }}</span>
-      <v-btn v-on:click="onRefresh()" color="green">Refresh</v-btn>
+      <v-btn v-on:click="onRefresh" color="green">Refresh</v-btn>
     </v-card-title>
     <v-card-text>
       <v-layout v-for="(item, i) in infoLabel" :key="i">
@@ -31,11 +31,10 @@
         </v-flex>
         <v-flex xs7>
           <v-text-field
-            v-model="privKey"
-            disabled
             :append-icon="showPriv ? 'visibility_off' : 'visibility'"
-            :append-icon-cb="() => (showPriv = !showPriv)"
             :type="showPriv ? 'text' : 'password'"
+            v-model="privKey"
+            @click:append="showPriv = !showPriv"
           ></v-text-field>
         </v-flex>
         <v-flex xs2>

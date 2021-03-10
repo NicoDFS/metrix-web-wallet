@@ -17,7 +17,7 @@
     "localstorage-logger": "^0.1.1",
     "npm": "^5.8.0",
     "qrcode": "^0.9.0",
-    "vue": "^2.5.16",
+    "vue": "^2.5.18",
     "vue-clipboard2": "0.0.6",
     "vuetify": "^1.5.24"
   },
@@ -66,7 +66,7 @@
     "vue-i18n": "^7.6.0",
     "vue-loader": "^13.7.1",
     "vue-style-loader": "^3.1.2",
-    "vue-template-compiler": "^2.5.16",
+    "vue-template-compiler": "^2.5.18",
     "webpack": "^2.6.1",
     "webpack-bundle-analyzer": "^2.11.1",
     "webpack-dev-middleware": "^1.12.2",
